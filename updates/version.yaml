@@ -1,0 +1,4 @@
+1.0.1:
+    - 'Initialize plugin.'
+    - 'Created table acorn_reporting_reports'
+    - builder_table_create_acorn_reporting_reports.php
