@@ -7,6 +7,8 @@ use Acorn\Messaging\Models\Settings;
 
 class Plugin extends PluginBase
 {
+    public $require = ['Acorn.User'];
+
     public function registerSettings()
     {
         return [
