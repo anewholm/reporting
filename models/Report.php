@@ -1,4 +1,4 @@
-<?php namespace AcornAssociated\Reporting\Models;
+<?php namespace Acorn\Reporting\Models;
 
 use Model;
 

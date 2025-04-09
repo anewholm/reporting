@@ -14,7 +14,7 @@
     print("<link rel='stylesheet' type='text/css' href='$src'/>");
   }
 
-  addJs("/plugins/acornassociated/reporting/assets/js/acornassociated.reporting.olap.init.1.js");
+  addJs("/plugins/acorn/reporting/assets/js/acorn.reporting.olap.init.1.js");
   addCss("$tomcat/lib/mui/css/tooltip.css");
 
   addJs("$tomcat/lib/d3-4.3.0/d3.v4.3.0.js");
@@ -49,7 +49,7 @@
   addJs("$tomcat/resources/js/loadingindicator.js");
   addJs("$tomcat/resources/messages/messages.js");
 
-  addJs("/plugins/acornassociated/reporting/assets/js/acornassociated.reporting.olap.init.js");
+  addJs("/plugins/acorn/reporting/assets/js/acorn.reporting.olap.init.js");
 
   addJs("$tomcat/resources/js/xlsxexport.js");
   addJs("$tomcat/resources/js/msgbox.js");
@@ -73,5 +73,5 @@
   addJs("$tomcat/resources/js/xavierderivedmeasurefactory.js");
   addJs("$tomcat/resources/js/xavier.js");
 
-  addJs("/plugins/acornassociated/reporting/assets/js/acornassociated.reporting.olap.init.2.js");
+  addJs("/plugins/acorn/reporting/assets/js/acorn.reporting.olap.init.2.js");
 ?></div>

@@ -1,4 +1,4 @@
-<?php namespace AcornAssociated\Reporting\Controllers;
+<?php namespace Acorn\Reporting\Controllers;
 
 use BackendAuth;
 use Backend\Models\User;
@@ -13,7 +13,7 @@ use ApplicationException;
 use Carbon\Carbon;
 use Winter\Storm\Database\Collection;
 
-use AcornAssociated\Reporting\Widgets\ReportList;
+use Acorn\Reporting\Widgets\ReportList;
 
 class Reports extends Controller
 {
@@ -32,7 +32,7 @@ class Reports extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('AcornAssociated.Reporting', 'reporting-menu-item', 'reporting-side-menu-item');
+        BackendMenu::setContext('Acorn.Reporting', 'reporting-menu-item', 'reporting-side-menu-item');
 
         $widget = new ReportList($this, 'reportList', function(){
             $authUser  = BackendAuth::user();
@@ -49,8 +49,8 @@ class Reports extends Controller
      */
     public function index()
     {
-        $this->addJs('/plugins/acornassociated/reporting/assets/js/acornassociated.reporting.js');
-        $this->addCss('/plugins/acornassociated/reporting/assets/css/acornassociated.reporting.css', 'core');
+        $this->addJs('/plugins/acorn/reporting/assets/js/acorn.reporting.js');
+        $this->addCss('/plugins/acorn/reporting/assets/css/acorn.reporting.css', 'core');
 
         $this->bodyClass = 'compact-container';
         $this->pageTitle = 'Reporting';
@@ -67,7 +67,7 @@ class Reports extends Controller
         /*
         // Create Message => open tab with form
         $message      = new Message();
-        $widgetConfig = $this->makeConfig('~/plugins/acornassociated/messaging/models/message/fields.yaml');
+        $widgetConfig = $this->makeConfig('~/plugins/acorn/messaging/models/message/fields.yaml');
         $widgetConfig->model = $message;
         $widget       = $this->makeWidget('Backend\Widgets\Form', $widgetConfig);
 

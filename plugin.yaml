@@ -1,17 +1,17 @@
 plugin:
-    name: 'acornassociated.reporting::lang.plugin.name'
-    description: 'acornassociated.reporting::lang.plugin.description'
-    author: 'Acorn Associated'
+    name: 'acorn.reporting::lang.plugin.name'
+    description: 'acorn.reporting::lang.plugin.description'
+    author: 'Acorn'
     icon: wn-icon-briefcase
     replaces: {  }
 permissions:
     reporting:
-        tab: acornassociated.reporting::lang.plugin.name
-        label: acornassociated.reporting::lang.permissions.reporting
+        tab: acorn.reporting::lang.plugin.name
+        label: acorn.reporting::lang.permissions.reporting
 navigation:
     reporting-menu-item:
         label: Reporting
-        url: acornassociated/reporting/reports
+        url: acorn/reporting/reports
         icon: icon-briefcase
         permissions:
             - reporting

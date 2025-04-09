@@ -8,7 +8,7 @@
                     <i class="icon-warning"></i>
                     <h3><?= e(trans('Groups functionality not complete')) ?></h3>
                     <p>
-                        <?= e(trans('Sanchez is busy with other shit man 😴')) ?>
+                        <?= e(trans('sz is busy with other shit man 😴')) ?>
                     </p>
                 </div>
             </div>
@@ -19,7 +19,7 @@
     <div id="report-<?= $templatePath ?>"
         websocket-listen="messaging"
         websocket-onmessaging-message-<?= $templatePath ?>-update="'report': '#report-<?= $templatePath ?>'"
-        websocket-onmessaging-message-<?= $templatePath ?>-sound="/plugins/acornassociated/messaging/assets/sounds/message-arrived.mp3"
+        websocket-onmessaging-message-<?= $templatePath ?>-sound="/plugins/acorn/messaging/assets/sounds/message-arrived.mp3"
     >
        <?= $this->makePartial('report', array(
             'templatePath' => $templatePath,

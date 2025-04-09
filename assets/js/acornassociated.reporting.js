@@ -1,4 +1,4 @@
-function acornassociated_public_report(id) {
+function acorn_public_report(id) {
     // #!/report/<x> direct open up of a report tab
     // TODO: Make group/user sub-type aware
     console.log('open report [' + id + ']');
