@@ -1,4 +1,4 @@
-<?php namespace Acorn\Reporting\Models;
+<?php namespace AcornAssociated\Reporting\Models;
 
 use Model;
 use BackendMenu;
@@ -9,7 +9,7 @@ class Settings extends Model
     public $implement = ['System.Behaviors.SettingsModel'];
 
     // A unique code
-    public $settingsCode = 'acorn_reporting_settings';
+    public $settingsCode = 'acornassociated_reporting_settings';
 
     // Reference to field configuration
     public $settingsFields = 'fields.yaml';
@@ -21,8 +21,8 @@ class Settings extends Model
     {
         parent::__construct($attributes);
 
-        BackendMenu::setContext('Acorn.Reporting', 'system', 'settings');
-        SettingsManager::setContext('Acorn.Reporting', 'settings');
+        BackendMenu::setContext('AcornAssociated.Reporting', 'system', 'settings');
+        SettingsManager::setContext('AcornAssociated.Reporting', 'settings');
     }
 
     public function initSettingsData()

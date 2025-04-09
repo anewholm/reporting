@@ -1,13 +1,13 @@
-<?php namespace Acorn\Reporting;
+<?php namespace AcornAssociated\Reporting;
 
 use System\Classes\PluginBase;
 use Backend\Controllers\Users;
 use BackendAuth;
-use Acorn\Messaging\Models\Settings;
+use AcornAssociated\Messaging\Models\Settings;
 
 class Plugin extends PluginBase
 {
-    public $require = ['Acorn.User'];
+    public $require = ['AcornAssociated.User'];
 
     public function registerSettings()
     {
@@ -15,12 +15,12 @@ class Plugin extends PluginBase
             'settings' => [
                 'label'       => 'Reporting Settings',
                 'description' => 'Manage reporting based settings.',
-                'category'    => 'Acorn',
+                'category'    => 'AcornAssociated',
                 'icon'        => 'icon-cog',
-                'class'       => 'Acorn\Reporting\Models\Settings',
+                'class'       => 'AcornAssociated\Reporting\Models\Settings',
                 'order'       => 500,
                 'keywords'    => 'OLAP reporting system',
-                'permissions' => ['acorn_reporting_settings']
+                'permissions' => ['acornassociated_reporting_settings']
             ]
         ];
     }

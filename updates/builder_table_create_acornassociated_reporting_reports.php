@@ -1,13 +1,13 @@
-<?php namespace Acorn\Reporting\Updates;
+<?php namespace AcornAssociated\Reporting\Updates;
 
 use Schema;
 use Winter\Storm\Database\Updates\Migration;
 
-class BuilderTableCreateAcornReportingReports extends Migration
+class BuilderTableCreateAcornassociatedReportingReports extends Migration
 {
     public function up()
     {
-        Schema::create('acorn_reporting_reports', function($table)
+        Schema::create('acornassociated_reporting_reports', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
@@ -19,6 +19,6 @@ class BuilderTableCreateAcornReportingReports extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('acorn_reporting_reports');
+        Schema::dropIfExists('acornassociated_reporting_reports');
     }
 }

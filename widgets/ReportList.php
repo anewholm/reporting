@@ -1,4 +1,4 @@
-<?php namespace Acorn\Reporting\Widgets;
+<?php namespace AcornAssociated\Reporting\Widgets;
 
 use BackendAuth;
 use Backend\Models\User;
@@ -16,8 +16,8 @@ use ApplicationException;
  * Report list widget.
  * This widget displays messages, emails and groups.
  *
- * @package acorn/messaging
- * @author sz
+ * @package acornassociated/messaging
+ * @author Sanchez
  */
 class ReportList extends WidgetBase
 {
